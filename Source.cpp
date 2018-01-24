@@ -1,10 +1,24 @@
+namespace LOL {
 
+	int rand() {
+		return 5;
+	}
 
-//instructions for 1-19
-//
-//intro: Write a program that asks a user for how old they are, and then repeats that number back to them in an insult.
-//
-//intermediate: Write a program that prints the numbers 256 down to 32, counting by fours
-//
-//advanced: make an account at HackerRank.com
-//do this problem: https://www.hackerrank.com/challenges/c-tutorial-struct/problem
+}
+
+#include <iostream>
+#include <time.h>
+
+int main() {
+	srand(time(NULL));
+	int SameNum;
+	int DifferentNum;
+
+	DifferentNum = rand();
+	SameNum = LOL::rand();
+
+	std::cout << DifferentNum << std::endl;
+	std::cout << SameNum << std::endl;
+	system("pause");
+
+}
